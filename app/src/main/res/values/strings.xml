@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">1.2.1 Подписка</string>
+    <string name="textViewSubscribe">Подписка</string>
+    <string name="textViewUserName">Имя пользователя</string>
+    <string name="textViewPassword">Пароль</string>
+    <string name="textViewEmail">Электронная почта</string>
+    <string name="textOK">ОК</string>
+    <string name="textClear">Очистить</string>
+    <string name="textViewMessage">Сообщение о подписке</string>
+
+</resources>
