@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView textViewEmailMessage = (TextView) findViewById(R.id.textViewMessage);
         final EditText editTextName = (EditText) findViewById(R.id.editTextName);
         final EditText editTextEmail = (EditText) findViewById(R.id.editTextEmail);
+        final EditText editTextPassword = (EditText) findViewById(R.id.editTextPassword);
 
         Button buttonOK = (Button) findViewById(R.id.buttonOK);
         buttonOK.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 textViewEmailMessage.setText("");
+                editTextName.setText("");
+                editTextEmail.setText("");
+                editTextPassword.setText("");
             }
         });
 
