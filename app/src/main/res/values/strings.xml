@@ -7,5 +7,8 @@
     <string name="textOK">ОК</string>
     <string name="textClear">Очистить</string>
     <string name="textViewMessage">Сообщение о подписке</string>
+    <string name="subscribeOK">"Подписка на рассылку успешно оформлена для пользователя %1$s на электронный адрес %2$s"</string>
+<!--    <string name="subscribeOK">"Подписка на рассылку успешно оформлена для пользователя "</string>-->
+<!--    <string name="emailText">" на электронный адрес "</string>-->
 
 </resources>

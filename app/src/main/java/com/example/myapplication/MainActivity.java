@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,9 +23,13 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonOK = (Button) findViewById(R.id.buttonOK);
         buttonOK.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                textViewEmailMessage.setText("Подписка на рассылку успешно оформлена для пользователя " + editTextName.getText() + " на электронный адрес " + editTextEmail.getText());
+                String javaFormatString  =  getString(R.string.subscribeOK);
+                String  substitutedString  =  String.format(javaFormatString, editTextName.getText(),  editTextEmail.getText());
+//                textViewEmailMessage.setText(getString(R.string.subscribeOK) + editTextName.getText() + getString(R.string.emailText) + editTextEmail.getText());
+                textViewEmailMessage.setText(substitutedString);
             }
         });
 
